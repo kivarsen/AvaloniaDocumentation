@@ -57,10 +57,9 @@ The Button control's full documentation can be found [here](http://reference.ava
 </Window>
 ```
 
-produces following output with **Windows 10**\
+produces following output with **Windows 10**\\
 
-
-![Basic button](<../../.gitbook/assets/button\_basic (1).png>)
+![Basic button](<../../.gitbook/assets/button\_basic (1) (1).png>)
 
 ### Colored button
 
@@ -78,8 +77,7 @@ produces following output with **Windows 10**\
 </Window>
 ```
 
-produces following output with **Windows 10**\
-
+produces following output with **Windows 10**\\
 
 ![Colored button](<../../.gitbook/assets/image (18) (1).png>)
 

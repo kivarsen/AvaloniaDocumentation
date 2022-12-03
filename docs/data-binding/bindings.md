@@ -1,6 +1,18 @@
 # Bindings
 
-You bind in XAML using the `{Binding}` markup extension. By using bindings \(assuming you've implemented [change notifications](https://docs.avaloniaui.net/docs/data-binding/change-notifications)\) any changes to the data context will automatically be updated in the control.
+You bind in XAML using the `{Binding}` markup extension. By using bindings (assuming you've implemented [change notifications](https://docs.avaloniaui.net/docs/data-binding/change-notifications)) any changes to the data context will automatically be updated in the control.
+
+Here's a code block:
+
+```csharp
+int main()
+{
+    int i = 0;
+    for (i = 1; i < 5; i++) {
+        Console.WriteLine("Hello");
+    }
+}
+```
 
 By default a binding binds to a property on the [`DataContext`](https://docs.avaloniaui.net/docs/data-binding/the-datacontext), e.g.:
 
@@ -24,7 +36,7 @@ An empty binding binds to DataContext itself
 
 We call the property on the control the binding _target_ and the property on the `DataContext` the binding _source_.
 
-## Binding Path <a id="binding-path"></a>
+## Binding Path <a href="#binding-path" id="binding-path"></a>
 
 The binding path above can be a single property, or it can be a chain of properties. For example if the object assigned to the `DataContext` has a `Student` property, and the value of this property has a `Name`, you can bind to the student name using:
 
@@ -38,7 +50,7 @@ You can also include array/list indexers in binding paths:
 <TextBlock Text="{Binding Students[0].Name}"/>
 ```
 
-## Binding Modes <a id="binding-modes"></a>
+## Binding Modes <a href="#binding-modes" id="binding-modes"></a>
 
 You can change the behavior of a `{Binding}` by specifying a binding `Mode`:
 
@@ -48,17 +60,17 @@ You can change the behavior of a `{Binding}` by specifying a binding `Mode`:
 
 The available binding modes are:
 
-| Mode | Description |
-| :--- | :--- |
-| `OneWay` | Changes to the source are automatically propagated to the target |
-| `TwoWay` | Changes to the source are automatically propagated to the target and vice-versa |
-| `OneTime` | The value from the source is propagated at initialization to the target and subsequent changes are ignored |
-| `OneWayToSource` | Changes to the target are propagated to the source |
-| `Default` | The binding mode is based on the property |
+| Mode             | Description                                                                                                |
+| ---------------- | ---------------------------------------------------------------------------------------------------------- |
+| `OneWay`         | Changes to the source are automatically propagated to the target                                           |
+| `TwoWay`         | Changes to the source are automatically propagated to the target and vice-versa                            |
+| `OneTime`        | The value from the source is propagated at initialization to the target and subsequent changes are ignored |
+| `OneWayToSource` | Changes to the target are propagated to the source                                                         |
+| `Default`        | The binding mode is based on the property                                                                  |
 
-The `Default` mode is assumed if one is not specified. This mode is generally `OneWay` for control properties that do not change due to user input \(e.g. `TextBlock.Text`\) and `TwoWay` for control properties that _do_ change due to user input \(e.g. `TextBox.Text`\).
+The `Default` mode is assumed if one is not specified. This mode is generally `OneWay` for control properties that do not change due to user input (e.g. `TextBlock.Text`) and `TwoWay` for control properties that _do_ change due to user input (e.g. `TextBox.Text`).
 
-## String Formatting <a id="binding-stringformat"></a>
+## String Formatting <a href="#binding-stringformat" id="binding-stringformat"></a>
 
 You can apply a format string to the binding to influence how the value is represented in the UI:
 
@@ -94,10 +106,9 @@ Other than in WPF, you need to surround the string format with curly braces and 
 <TextBlock Text="{Binding FloatValue, StringFormat='{}{0:0.0}'}" />
 ```
 
-{% hint style="info" %} 
+{% hint style="info" %}
 Read more about the available string formats in the [Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/api/system.string.format)
 {% endhint %}
-
 
 ## Samples
 

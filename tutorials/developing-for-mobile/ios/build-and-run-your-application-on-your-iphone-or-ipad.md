@@ -65,7 +65,7 @@ Add a `<CodesignKey>` tag.
 
 To find the value for this open the application `KeyChain Access`. In the search box search for development.
 
-![](<../../../.gitbook/assets/image (33).png>)
+![](<../../../.gitbook/assets/image (31).png>)
 
 Set the value exactly as the bold text at the top of the window on your selected development certificate.
 

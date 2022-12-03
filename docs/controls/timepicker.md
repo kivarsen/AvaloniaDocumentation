@@ -24,7 +24,7 @@ TimePicker arrivalTimePicker = new TimePicker();
 
 Use a `TimePicker` to let a user enter a single time value. You can customize the `DatePicker` to use a 12-hour or 24-hour clock.
 
-![](<../../.gitbook/assets/image (22) (1).png>)
+![](<../../.gitbook/assets/image (22).png>)
 
 ## 12-hour and 24-hour clocks
 

@@ -11,7 +11,7 @@ The git tree should now look like this:
 ![](<../../.gitbook/assets/image (4).png>)
 
 * Now login at `dev.azure.com` to access the azure pipelines. Wait for the CI to finish the build.
-* The package for `0.10.2` should now be on the `avalonia-all` nuget feed. You should run a due diligence test on this build to ensure you are happy with the release and the packages work.&#x20;
+* The package for `0.10.2` should now be on the `avalonia-all` nuget feed. You should run a due diligence test on this build to ensure you are happy with the release and the packages work.
 
 {% hint style="danger" %}
 Don't assume the Nuget packages will work just because master was working. In the past some technical changes i.e. Strong Naming broke nuget packages.
@@ -25,7 +25,7 @@ Don't assume the Nuget packages will work just because master was working. In th
 
 ![](<../../.gitbook/assets/image (11).png>)
 
-![](<../../.gitbook/assets/image (17) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (17) (1) (1).png>)
 
 * Then click on `Deploy`.
 

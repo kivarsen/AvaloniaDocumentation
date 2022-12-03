@@ -2,19 +2,18 @@
 
 The `SplitButton` functions as a [`Button`](https://docs.avaloniaui.net/docs/controls/button) with primary and secondary parts that can each be pressed separately. The primary part behaves like normal `Button` and the secondary part opens a [`Flyout`](https://docs.avaloniaui.net/docs/controls/flyouts) with additional actions.
 
-
-## Is this the right control? 
+## Is this the right control?
 
 A `SplitButton` should only be composed of similar actions. Fundamentally, this control is used to group common actions together where one has clear priority over the others. The most common action should be the default and what is shown in the primary part of the SplitButton. Less-common actions should be added to the flyout which is shown when the secondary (drop down) part is pressed.
 
-{% hint style="info" %} 
+{% hint style="info" %}
 The user-selection action should be invoked immediately when pressing either the primary part or a secondary action in the flyout. All pressed actions, whether primary or secondary, are immediate.
 {% endhint %}
 
 ## Common Properties
 
 | Property  | Description                                                    |
-|-----------|----------------------------------------------------------------|
+| --------- | -------------------------------------------------------------- |
 | `Content` | The content to display in the primary part                     |
 | `Flyout`  | The `Flyout` which shows up when the secondary part is clicked |
 | `Command` | A command to be invoked when the primary button is clicked     |
@@ -22,7 +21,7 @@ The user-selection action should be invoked immediately when pressing either the
 ## Pseudoclasses
 
 | Pseudoclass    | Description                                                                                                                                                         |
-|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `:pressed`     | Set when the entire `SplitButton` is pressed using a keyboard input such as Space or Enter. In this state no distinction is made between primary or secondary parts |
 | `:flyout-open` | Set when the `Flyout` is open                                                                                                                                       |
 
@@ -54,13 +53,14 @@ The user-selection action should be invoked immediately when pressing either the
     </SplitButton.Flyout>
 </SplitButton>
 ```
-![](../../.gitbook/assets/SplitButtonClosed.png)
 
-*SplitButton (Flyout closed)*
+![](../../.gitbook/assets/ToggleSplitButton\_closed\_unchecked.png)
+
+_SplitButton (Flyout closed)_
 
 ![](../../.gitbook/assets/SplitButtonOpened.png)
 
-*SplitButton (Flyout opened)*
+_SplitButton (Flyout opened)_
 
 ### Color-Selection example
 
@@ -97,9 +97,9 @@ A common use case of a `SplitButton` is for coloring text within an editor. Pres
 </SplitButton>
 ```
 
-![](../../.gitbook/assets/SplitButton_ColorPickerSample.png)
+![](../../.gitbook/assets/SplitButton\_ColorPickerSample.png)
 
-*Sample of SplitButton for color selection*
+_Sample of SplitButton for color selection_
 
 ### Export Button Sample
 
@@ -122,7 +122,6 @@ Another common example of the `SplitButton` could be an export button. When the 
 </SplitButton>
 ```
 
-![](../../.gitbook/assets/SplitButton_ExportButtonSample.png)
+![](../../.gitbook/assets/SplitButton\_ExportButtonSample.png)
 
-*Sample of a SplitButton with different export options*
-
+_Sample of a SplitButton with different export options_

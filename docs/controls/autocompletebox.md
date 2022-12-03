@@ -14,7 +14,16 @@ Here's another line of code
 As you can see, it works quite well. Here are some more steps:
 
 1. Type some code
+```
+<Window>
+Sample code
+</Window>
+```
+
 2. Type more code
+```
+int main() {}
+```
 3. Finish!
 
 ### Reference

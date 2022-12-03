@@ -30,6 +30,14 @@ As you can see, it works quite well. Here are some more steps:
     ```
 3. Finish!
 
+What happens if we indent some lines?
+
+    void MyFunc()
+    {
+        int i = 0;
+        i++;
+    }
+
 ### Reference
 
 [AutoCompleteBox](http://reference.avaloniaui.net/api/Avalonia.Controls/AutoCompleteBox/)

@@ -6,25 +6,28 @@ TODO: Add a screenshot here
 
 Code sample:
 
-    ```
-    Code goes here
-    Here's another line of code
-    ```
+```
+Code goes here
+Here's another line of code
+```
 
 As you can see, it works quite well. Here are some more steps:
 
-1. Type some code
+1.  Type some code
+
     ```
     <Window>
     Sample code
+    More sample code
     </Window>
     ```
+2.  Type more code
 
-2. Type more code
     ```
-    int main() {}
+    int main() {
+        return 2;
+    }
     ```
-    
 3. Finish!
 
 ### Reference

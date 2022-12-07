@@ -12,11 +12,13 @@ It is currently very early days and not ready for production, however if you wan
     dotnet workload install wasm-experimental wasm-tools
     ```
 
+
 2. Install or update the dotnet templates to the latest version.
 
     ```bash
     dotnet new install avalonia.templates
     ```
+
 
 3. Create a new directory for the project.
 
@@ -25,11 +27,13 @@ It is currently very early days and not ready for production, however if you wan
     cd WebTest
     ```
 
+
 4. Generate a new project that supports running in the browser.
 
     ```bash
     dotnet new avalonia.xplat
     ```
+
 
 5. In order to run simply do:
 
@@ -37,6 +41,7 @@ It is currently very early days and not ready for production, however if you wan
     cd WebTest.Web
     dotnet run
     ```
+
 
 6. In the console output you will see HTTP and HTTPS links to open the app.
 
